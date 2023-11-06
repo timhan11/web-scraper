@@ -4,11 +4,12 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-
-#!Must replace URL with your website of choice
+#!NOT ALL WEBSITES CAN BE SCRAPED
+#!Must replace URL with the website you want to scrape
+#!May need to change variabes depending on time of job
 #!Will need to change the id and classes as they contain the information to scrape
 
-#website ulr
+#website url
 URL = os.getenv("WEB_URL")
 
 page = requests.get(URL)
